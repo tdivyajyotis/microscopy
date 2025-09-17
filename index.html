@@ -77,27 +77,29 @@
       currentVideo = null;
       isVideo = false;
 
-      if (item.url.match(/\.(jpg|jpeg|png)$/i)) {
+      const fileUrl = item.url.toLowerCase();
+
+      if (fileUrl.endsWith(".jpg") || fileUrl.endsWith(".jpeg") || fileUrl.endsWith(".png")) {
         const img = document.createElement("img");
         img.src = item.url;
         container.appendChild(img);
-      } else if (item.url.match(/\.(tif|tiff)$/i)) {
+
+      } else if (fileUrl.endsWith(".tif") || fileUrl.endsWith(".tiff")) {
         fetch(item.url)
           .then(r => r.arrayBuffer())
           .then(buf => {
             const ifds = UTIF.decode(buf);
             UTIF.decodeImages(buf, ifds);
-            const rgba = UTIF.toRGBA8(ifds[0]);
             const canvas = document.createElement("canvas");
-            canvas.width = ifds[0].width;
-            canvas.height = ifds[0].height;
             const ctx = canvas.getContext("2d");
-            const imgData = ctx.createImageData(canvas.width, canvas.height);
-            imgData.data.set(rgba);
-            ctx.putImageData(imgData, 0, 0);
+            UTIF.renderImage(ctx, ifds[0]);  // direct TIFF → canvas
             container.appendChild(canvas);
+          })
+          .catch(err => {
+            container.innerHTML = "<p>Failed to load TIFF: " + err + "</p>";
           });
-      } else if (item.url.match(/\.(mp4|webm|ogg)$/i)) {
+
+      } else if (fileUrl.endsWith(".mp4") || fileUrl.endsWith(".webm") || fileUrl.endsWith(".ogg")) {
         const video = document.createElement("video");
         video.src = item.url;
         video.controls = true;
@@ -105,6 +107,7 @@
         container.appendChild(video);
         currentVideo = video;
         isVideo = true;
+
       } else {
         container.innerHTML = "<p>Unsupported file type: " + item.fileName + "</p>";
       }
