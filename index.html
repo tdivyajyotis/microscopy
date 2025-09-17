@@ -8,7 +8,7 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     #media-container { margin-bottom: 15px; }
-    img, video { max-width: 90%; max-height: 500px; display: block; margin: auto; }
+    img, canvas, video { max-width: 90%; max-height: 500px; display: block; margin: auto; }
     button { margin: 5px; padding: 10px 20px; }
     #progress { margin-top: 15px; font-weight: bold; }
     #storage-controls { margin-top: 15px; }
@@ -44,7 +44,6 @@
       const resp = await fetch("images.json");
       mediaList = await resp.json();
 
-      // Restore progress from local storage
       const saved = localStorage.getItem("labelingState");
       if (saved) {
         try {
@@ -74,7 +73,6 @@
       currentVideo = null;
       isVideo = false;
 
-      // Remove query parameters & convert to lower case
       const fileUrl = item.url.toLowerCase().split('?')[0];
 
       if (/\.(jpg|jpeg|png)$/.test(fileUrl)) {
@@ -83,15 +81,13 @@
         container.appendChild(img);
 
       } else if (/\.(tif|tiff)$/.test(fileUrl)) {
-        const img = document.createElement("img");
-        img.alt = item.fileName;
-        container.appendChild(img);
-
         fetch(item.url)
           .then(r => r.arrayBuffer())
           .then(buf => {
             const ifds = UTIF.decode(buf);
-            UTIF.replaceIMG(img, ifds[0]); // render first page
+            const canvas = UTIF.toCanvas(ifds[0]); // render TIFF to canvas
+            if (canvas) container.appendChild(canvas);
+            else container.innerHTML = "<p>Failed to render TIFF file.</p>";
           })
           .catch(err => {
             container.innerHTML = "<p>Failed to load TIFF: " + err + "</p>";
@@ -156,7 +152,6 @@
 
     function clearStorage() { localStorage.removeItem("labelingState"); alert("Local storage cleared."); }
 
-    // Keyboard shortcuts
     document.addEventListener("keydown", e => {
       if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
       switch (e.key.toLowerCase()) {
