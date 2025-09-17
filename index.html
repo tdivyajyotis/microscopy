@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Media Labeling Tool</title>
-  <script src="https://unpkg.com/tiff@1.0.0/tiff.min.js"></script>
+  <!-- Correct tiff.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tiff@7.1.1/tiff.min.js"></script>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     #media-container { margin-bottom: 15px; }
@@ -39,6 +40,8 @@
     let results = [];
     let currentVideo = null;
     let isVideo = false;
+    let tiff = null;
+    let currentPage = 0;
 
     async function loadMedia() {
       const resp = await fetch("images.json");
@@ -87,12 +90,17 @@
         fetch(item.url)
           .then(r => r.arrayBuffer())
           .then(buf => {
-            const tiff = new Tiff({ buffer: buf });
-            const canvas = tiff.toCanvas();
-            if (canvas) {
-              container.appendChild(canvas);
+            tiff = new Tiff({ buffer: buf });
+            const numPages = tiff.countDirectory();
+            if (numPages > 1) {
+              showPage(currentPage);
             } else {
-              container.innerHTML = "<p>Failed to render TIFF file.</p>";
+              const canvas = tiff.toCanvas();
+              if (canvas) {
+                container.appendChild(canvas);
+              } else {
+                container.innerHTML = "<p>Failed to render TIFF file.</p>";
+              }
             }
           })
           .catch(err => {
@@ -110,6 +118,20 @@
 
       } else {
         container.innerHTML = "<p>Unsupported file type: " + item.fileName + "</p>";
+      }
+    }
+
+    function showPage(pageIndex) {
+      if (tiff) {
+        tiff.setDirectory(pageIndex);
+        const canvas = tiff.toCanvas();
+        const container = document.getElementById("media-container");
+        container.innerHTML = "";
+        if (canvas) {
+          container.appendChild(canvas);
+        } else {
+          container.innerHTML = "<p>Failed to render page " + (pageIndex + 1) + ".</p>";
+        }
       }
     }
 
@@ -190,6 +212,18 @@
         case "r": reject(); break;
         case "n": nextFile(); break;
         case "s": downloadCSV(); break;
+        case "arrowleft":
+          if (tiff && tiff.countDirectory() > 1) {
+            currentPage = Math.max(0, currentPage - 1);
+            showPage(currentPage);
+          }
+          break;
+        case "arrowright":
+          if (tiff && tiff.countDirectory() > 1) {
+            currentPage = Math.min(tiff.countDirectory() - 1, currentPage + 1);
+            showPage(currentPage);
+          }
+          break;
       }
     });
 
