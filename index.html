@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Media Labeling Tool</title>
-  <!-- Correct tiff.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/tiff@7.1.1/tiff.min.js"></script>
+  <!-- Latest tiff.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tiff@7.1.1/lib/tiff_decoder.js"></script>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     #media-container { margin-bottom: 15px; }
@@ -16,9 +16,7 @@
 </head>
 <body>
   <h2>Media Labeling Tool</h2>
-
   <div id="media-container"></div>
-
   <div id="controls">
     <button onclick="label('Pebrine')">Pebrine (P)</button>
     <button onclick="label('Bacteria')">Bacteria (B)</button>
@@ -26,21 +24,19 @@
     <button onclick="reject()">Reject (R)</button>
     <button onclick="nextFile()">Next File (N)</button>
   </div>
-
   <div id="progress"></div>
-
   <button onclick="downloadCSV()">Download CSV (S)</button>
   <div id="storage-controls">
     <button onclick="clearStorage()">Clear Local Storage</button>
   </div>
-
   <script>
     let mediaList = [];
     let currentIndex = 0;
     let results = [];
     let currentVideo = null;
     let isVideo = false;
-    let tiff = null;
+
+    let tiffFile = null;
     let currentPage = 0;
 
     async function loadMedia() {
@@ -58,7 +54,6 @@
           console.warn("Failed to parse saved state:", e);
         }
       }
-
       updateProgress();
       showMedia();
     }
@@ -72,12 +67,13 @@
         document.getElementById("media-container").innerHTML = "<p>All files processed!</p>";
         return;
       }
-
       const item = mediaList[currentIndex];
       const container = document.getElementById("media-container");
       container.innerHTML = "";
       currentVideo = null;
       isVideo = false;
+      tiffFile = null;
+      currentPage = 0;
 
       const fileUrl = item.url.toLowerCase();
 
@@ -85,28 +81,31 @@
         const img = document.createElement("img");
         img.src = item.url;
         container.appendChild(img);
-
       } else if (fileUrl.endsWith(".tif") || fileUrl.endsWith(".tiff")) {
         fetch(item.url)
           .then(r => r.arrayBuffer())
           .then(buf => {
-            tiff = new Tiff({ buffer: buf });
-            const numPages = tiff.countDirectory();
-            if (numPages > 1) {
-              showPage(currentPage);
-            } else {
-              const canvas = tiff.toCanvas();
-              if (canvas) {
-                container.appendChild(canvas);
-              } else {
-                container.innerHTML = "<p>Failed to render TIFF file.</p>";
+            try {
+              const decoder = new tiff.TIFFDecoder(buf);
+              tiffFile = decoder.decode();
+
+              if (!tiffFile || !tiffFile.ifd || tiffFile.ifd.length === 0) {
+                container.innerHTML = "<p>Failed to decode TIFF image.</p>";
+                return;
               }
+
+              if (tiffFile.ifd.length > 1) {
+                renderPage(currentPage);
+              } else {
+                renderPage(0);
+              }
+            } catch (err) {
+              container.innerHTML = "<p>Failed to decode TIFF: " + err + "</p>";
             }
           })
           .catch(err => {
             container.innerHTML = "<p>Failed to load TIFF: " + err + "</p>";
           });
-
       } else if (fileUrl.endsWith(".mp4") || fileUrl.endsWith(".webm") || fileUrl.endsWith(".ogg")) {
         const video = document.createElement("video");
         video.src = item.url;
@@ -115,34 +114,81 @@
         container.appendChild(video);
         currentVideo = video;
         isVideo = true;
-
       } else {
         container.innerHTML = "<p>Unsupported file type: " + item.fileName + "</p>";
       }
     }
 
-    function showPage(pageIndex) {
-      if (tiff) {
-        tiff.setDirectory(pageIndex);
-        const canvas = tiff.toCanvas();
-        const container = document.getElementById("media-container");
-        container.innerHTML = "";
-        if (canvas) {
-          container.appendChild(canvas);
-        } else {
-          container.innerHTML = "<p>Failed to render page " + (pageIndex + 1) + ".</p>";
+    function renderPage(pageIndex) {
+      const container = document.getElementById("media-container");
+      if (!tiffFile || !tiffFile.ifd || pageIndex < 0 || pageIndex >= tiffFile.ifd.length) {
+        container.innerHTML = "<p>Page not found.</p>";
+        return;
+      }
+
+      const page = tiffFile.ifd[pageIndex];
+      const width = page.width;
+      const height = page.height;
+      const pixels = page.data;
+
+      const canvas = document.createElement("canvas");
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext("2d");
+      const imageData = ctx.createImageData(width, height);
+
+      // Pixel data is RGBA 8-bit per channel when decoded by this library
+      // The pixel data length should be width*height*4
+      // If pixel data is Uint8Array length is width*height*4, copy directly
+
+      if (pixels.length === width * height * 4) {
+        imageData.data.set(pixels);
+      } else {
+        // Handle other cases (like grayscale or missing alpha)
+        // Here we convert grayscale or RGB to RGBA manually
+
+        for(let i = 0; i < width * height; i++){
+          if(page.bitsPerSample === 8){
+            // grayscale or RGB depending on samples per pixel
+            if(page.samplesPerPixel === 1){ // grayscale
+              let val = pixels[i];
+              imageData.data[i*4] = val;
+              imageData.data[i*4+1] = val;
+              imageData.data[i*4+2] = val;
+              imageData.data[i*4+3] = 255;
+            } else if(page.samplesPerPixel === 3){ // RGB
+              imageData.data[i*4] = pixels[i*3];
+              imageData.data[i*4+1] = pixels[i*3+1];
+              imageData.data[i*4+2] = pixels[i*3+2];
+              imageData.data[i*4+3] = 255;
+            } else {
+              // fallback to black transparent
+              imageData.data[i*4] = 0;
+              imageData.data[i*4+1] = 0;
+              imageData.data[i*4+2] = 0;
+              imageData.data[i*4+3] = 255;
+            }
+          } else {
+            // For other bit depths, fallback with grayscale 8bit
+            let val = 0;
+            imageData.data[i*4] = val;
+            imageData.data[i*4+1] = val;
+            imageData.data[i*4+2] = val;
+            imageData.data[i*4+3] = 255;
+          }
         }
       }
+      ctx.putImageData(imageData, 0, 0);
+      container.innerHTML = "";
+      container.appendChild(canvas);
     }
 
     function label(choice) {
       const item = mediaList[currentIndex];
       let timestamp = "";
-
       if (currentVideo) {
         timestamp = currentVideo.currentTime.toFixed(2);
       }
-
       let row = {
         fileName: item.fileName,
         Timestamp: timestamp,
@@ -150,10 +196,8 @@
         Bacteria: choice === "Bacteria" ? "Bacteria" : "",
         Clear: choice === "Clear" ? "Clear" : ""
       };
-
       results.push(row);
       saveState();
-
       if (!isVideo) {
         currentIndex++;
         updateProgress();
@@ -202,7 +246,7 @@
       alert("Local storage cleared. Reload page to start fresh.");
     }
 
-    // Keyboard shortcuts
+    // Keyboard shortcuts & multipage TIFF page navigation
     document.addEventListener("keydown", e => {
       if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
       switch (e.key.toLowerCase()) {
@@ -212,16 +256,17 @@
         case "r": reject(); break;
         case "n": nextFile(); break;
         case "s": downloadCSV(); break;
+
         case "arrowleft":
-          if (tiff && tiff.countDirectory() > 1) {
+          if (tiffFile && tiffFile.ifd && tiffFile.ifd.length > 1) {
             currentPage = Math.max(0, currentPage - 1);
-            showPage(currentPage);
+            renderPage(currentPage);
           }
           break;
         case "arrowright":
-          if (tiff && tiff.countDirectory() > 1) {
-            currentPage = Math.min(tiff.countDirectory() - 1, currentPage + 1);
-            showPage(currentPage);
+          if (tiffFile && tiffFile.ifd && tiffFile.ifd.length > 1) {
+            currentPage = Math.min(tiffFile.ifd.length - 1, currentPage + 1);
+            renderPage(currentPage);
           }
           break;
       }
