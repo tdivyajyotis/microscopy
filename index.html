@@ -74,14 +74,15 @@
       currentVideo = null;
       isVideo = false;
 
-      const fileUrl = item.url.toLowerCase();
+      // Remove query parameters & convert to lower case
+      const fileUrl = item.url.toLowerCase().split('?')[0];
 
-      if (fileUrl.endsWith(".jpg") || fileUrl.endsWith(".jpeg") || fileUrl.endsWith(".png")) {
+      if (/\.(jpg|jpeg|png)$/.test(fileUrl)) {
         const img = document.createElement("img");
         img.src = item.url;
         container.appendChild(img);
 
-      } else if (fileUrl.endsWith(".tif") || fileUrl.endsWith(".tiff")) {
+      } else if (/\.(tif|tiff)$/.test(fileUrl)) {
         const img = document.createElement("img");
         img.alt = item.fileName;
         container.appendChild(img);
@@ -96,7 +97,7 @@
             container.innerHTML = "<p>Failed to load TIFF: " + err + "</p>";
           });
 
-      } else if (fileUrl.endsWith(".mp4") || fileUrl.endsWith(".webm") || fileUrl.endsWith(".ogg")) {
+      } else if (/\.(mp4|webm|ogg)$/.test(fileUrl)) {
         const video = document.createElement("video");
         video.src = item.url;
         video.controls = true;
@@ -106,6 +107,7 @@
         isVideo = true;
 
       } else {
+        console.log("Unsupported file:", item.fileName, item.url);
         container.innerHTML = "<p>Unsupported file type: " + item.fileName + "</p>";
       }
     }
