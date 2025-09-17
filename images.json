@@ -1,208 +1,826 @@
 [
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831103103810.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=sEQq6HgLzCZNViK9EJc4sCQHBwE%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831103230110.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=k7bZzWK1GJFu%2F13qCulDWUoiQjs%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831103531459.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Gd9baCnNeJhn43y6LZP%2B%2BmFqYK4%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831103532670.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=8DxF0b3GJajlsrkTzqm39vKfEJ0%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831104608298.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5K1RjtURTLGg1rfHE81wHqxMRXM%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831105038007.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=821oEI%2BniwUV3GY7OQvSjYVDaEc%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831105824830.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=cEVvyQFBcfv55Q69C700glXIs10%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831105859925.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5L7XX6AFEvef0adcGZJnTTjoAyA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110324014.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=49Bv04NK0WTqg7Vu5ynyWsHsNeg%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110327669.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=44YESUI0Evce7yt3jELJGsho6KQ%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110327931.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Ou2cZSIX%2FTTzUz2p8ZXeBEBa5vM%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110329613.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=m44nqI30kuQLX7WUP0aKtRYU7Vg%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110620752.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=vpoAuHEcLOhUvA5xd5ZMhDaE%2Bfg%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110822185.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=SRn3k9HqQZKfQcukYzL2Nri0QgY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110822407.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Oms3VPrt7iJZMZbpNgEIcAwX2Ds%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110822772.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=XWPOf513LlIh110LxAAIvQlPhi0%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110823009.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=2i8hwrCnNZXfmdb23epOuX6r3aw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110823200.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=TyxKX760BpfZVZ8T8PxNJxVPLXc%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110823406.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Kp2XJuiiEwoaD2id30FuZ8VjZxw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110823595.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=urIeMrp8NDD5x1SZHlZ4K0laCmM%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110823769.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=F3%2BE%2BZODs3sk7PusaiP05x18wIo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110823959.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=WvNOeFFKQvEjZpna99QyFCmEiyY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110824142.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5HBRNf8PNL0p94qe6j0OvDRbp8g%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110824343.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=4UUr8Q9H3kYC6kwM47HZCkmQb4A%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110824560.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=843T3f9%2FCxcYFHfDi%2BRUnPA9TOk%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110824767.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=xqQoTly1pG5p72KQvWBFQOhXbaU%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110824980.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=LLHsG%2FHZcYTtpHIWqpDLTseRnzs%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110825154.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=xFX5R1lI4auHo8yiLd4BIb7pVXU%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831110825348.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=j8x9%2FfCQK0m8jRU099uG6nIVMFE%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831111836499.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=2WwDD3UKgOVNGgVwFAOeVD8S0HM%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831112059596.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=mWd3RUX8dS4xHYDF9S93znvEnmk%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831112533568.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=UYLHwX0y%2Fgz0iNmOoGnwofUXtJw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831112904196.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=OBSc9Ua2ZFucN1UbgAlypODGrm4%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831114521313.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=4d5KkgPOQNKhHoboAB3G9%2FSXJ%2Bo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831115403782.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=S5BSR5%2FRhfQkvGshEtq%2B%2FsPsOlU%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831115638809.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=vnpOzsdV6USuFWP6TVJl6VBHIFU%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120100610.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ObLcSY%2BLb3cMq%2FcW7xClMTcHjuw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120212001.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=05nplrXNDIuchZeTSX5QH3zg13A%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120655680.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=O7kGIHubZiZg1c%2B0nX74ASOwfO4%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120659289.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=q8dsQQoaQGHrQbdA1fBUczwLqeI%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120725747.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=W8AyDo1KbLAPuvrZ63NZ2E1KAk8%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120735320.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=l5fRW9akZXT9a%2Blq17Qp4rJoZVk%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120804800.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=pk%2BQh%2FE%2BG5ne1gAGyFeSPTBvcDg%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120808832.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=iSHZ4XhaTgX4n%2F4%2BgD6vBI9pa%2Fk%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120812232.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=7hjS%2FGGF6LRswbCOcAF9AfU6PCc%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120815931.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=9QFlU3fZsdSMaxDP1%2FCGjQpYhXw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120817260.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ivif%2BpJ6DjttRkwnL1gFohjbg%2BA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831120858639.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=4RPesSwZWZJ%2FIySvU6R04%2FYx6Yo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121008167.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=8APh5MNlNND7K6PPHJG7VeD5Ia4%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121008999.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=OQBetdfGeFlCD7tnISnpfjeV0k0%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121047641.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=B%2FgHTFhgqehJyfF%2Fvc2L2GsBJFc%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121048100.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=bOecyByZVVukm4%2BIsnJr3DIarHI%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121325572.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=iYqLEtyq9%2BwXAccbg%2FYB6zviSLY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121326898.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2Fj6KWHU1wl3FLhKrjc6HtsSRKn0%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121433574.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=HSzbKBuyKsJNPGfx63wEPW0ZcuA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121604475.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=r3Pxw1I5IOcZbnrs%2FU7T7D0oR5g%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121638757.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5uggnZuIKUhYk%2FWnC2kJv022WZ0%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121639685.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=7NPFsQgj4qTnUX5xaVFqTIqoZh0%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121805314.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=WrCZ1wkAI%2BumNcF9sCUN3p8vcPE%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121806322.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=jAxwsgow4Byvj%2BhkmE7zwDB%2BTVY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121837149.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=kJ9SnhG6nNRYre2dJeOSDgWbuvQ%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121855235.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=4Ov3dBGHRkbV7ua23nJKymwHEks%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121914254.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=zGZY%2FRA9V%2BM2UOkbUqIadWE08AE%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121921577.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=aJ0zwjI45OZNSKWDCsjwZOwFAQo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121934417.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ebrf56sWNadKJeZhwg78V3yUz7M%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831121936225.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=hfn0vU1xk4A49X7M8eO46L%2BTMKY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122005877.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=qaY8qSNHbe0A2iqOfLzucAZifyQ%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122007496.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=cf96A6iQjucxBrdPLeAjrKCsXOA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122116746.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=0h5i7L%2F7eLS8%2FY6bMGOIPoq9xfo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122129590.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=8AIbcsDqhqfou4buGAYR9sWv5M4%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122218539.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Pl36%2FFcWOWjwswBpKGXm2%2F9ElMk%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122221334.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=pMvK0bsmlz30FacArcTrJzZSehA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122253678.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ecK1xKJOjie6%2F6IAmrgRzEbB5GM%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122328290.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=M5NRQpbtPjNETWtsu%2BHVx0mz6ls%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122354394.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=xIkpPuumRxK6OMOdreYyaicvKeo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122355740.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=9SJD58nr%2B8y%2Fmp%2FYSLD%2F25wotYA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122356045.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ao1aIISqlNfjY6sF%2FcirQug9IME%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122446980.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5iJ4XJo%2F%2BnGDEeKbcen2X%2BvFBCI%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122448162.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=08tIpCUo5zMjyhw%2BM2zAYjkhcFI%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122538892.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=oML7ZwRJxKW35SJPjYwj4viz0ns%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122626718.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=IR42XVUCztFQ1AA49hLmy7CYmOo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122730106.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=WhVdxfsUHHfr69Uweidkh%2FeZFcA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831122757912.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Re8jtSYlO6NYs5tZBqeuvpiJavA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123317197.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=1Exf3Cczy2%2FC03T%2FhSGypOrlO7o%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123356930.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Szfw04AeeGJKmFId6LrSS5efPnQ%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123602607.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=vm9fosAe8A2ZE6UeajCfakB0194%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123645915.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=7YVQjZUBIe3j6G0QzCmS2guz3Sc%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123650053.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=9tymzVMrLhwEata0vSnflPPwsK8%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123729103.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=jDnHpOl0zGLAp5E6%2FO4Kuooqw6k%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123730279.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=D0nsOJcL6ErtHRHlgskVS2WCiOs%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123745389.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=XDHaATHbfDnWCnafl%2BpgrAQic7U%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123753963.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=wkjRJRjN9EeCExrJ%2F%2BWmDmtC2GA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123801560.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=4UjgUhm3kzgM1FJCLzNzD3pABGE%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123902619.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=W43Itwiu6GQopi4%2B%2BSIKMHuhcpo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123903473.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=eHF0wxxlrxwiNiuSPyRNiHyycS8%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123944595.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=n%2BLfW9WQDoDP4KoHEu8dSsi8%2FPw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123946106.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=FM6WUbnD5pzmAgciCH6XCic%2FKEw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831123950197.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=8k5kYLG0j%2FANDoLr%2FMihqTVg6hg%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124000853.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Ubsonj6C%2BXw%2FtlVzgWkwCXeLXb8%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124007805.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=EhB44uNIg7mAoKsdP8CWU%2FIP0%2FE%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124011400.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=wKKV7JDEIg793Qqu6nAIYj57944%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124117466.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=WMzEQzvsTFlKjnBkOBR0dWmMTfo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124119747.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=K2PDAJXvcjZXmGk4Q%2FEaRk71GPk%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124142556.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=hO7%2FMNHgowMmi%2BKHcObPBCZ%2BGSc%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124253974.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2FN4TSeZWSehO6p95FVEKC2duT4g%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124257012.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=050zPAC3c5S1n8POfeq3cbtmtq0%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124309165.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=3yZItu9zXaI0agHEHrsmi1Aruho%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124315989.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=FafecORKG3F6UaGyziLv7ShhEuA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124351555.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=1fN8gIxsyfb6H8yYdxPg5vIud2E%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124358185.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=9DSgM0ZVlJA1fnfvSdlKzWG87Sk%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124407066.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=eJXgB%2BiQdH3%2FYoZiZzzgf6AY3ko%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124439581.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=QaOSVOIb7S4%2Fbrfgl%2BDTzBcHots%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124451045.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=19m4zaKa17h7t2n0F27K4WOHtvA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124455102.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=tli5e%2Fcbm%2FdECIfi%2BuSqTBfUGLU%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124505916.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=GCUySHaCxbzI2Pm951FKt1NDO00%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124526766.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5KpAUjtNH4%2B2NcmkH%2B7siUrlVuU%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124630854.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2BiI5vx46U5xMK99kH9TQ5JT8rjA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124632562.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=tynNDKCE0Pa0p6x9DuuEd5AhND4%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124700536.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=XHKxeJW%2B3uoNC7mE0YCJ4JGMMjY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124843313.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=mOskj%2B%2Fp0OFb1TVqq9XAVPEyF9g%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831124912232.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=y3Nv88kgaFaGnvi%2F5pptQqAfAt8%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831125105426.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=DSj9a1BBBMiOIHMFamSR0HghvFY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831125134166.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=8hLmdnLoj1tIr7SL%2BdQvn63x5%2Fg%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831125429297.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=QBaZR3erJu9uVEseRC74e25y4KM%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831125435795.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=JSQs%2F2GoO0mxub2kAItmU9wa49k%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831125436100.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=OgJ4hr3GdYgL7q5nejOMF%2B05bQs%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831142708354.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=HqPpCMie5Iz%2FiLMdhVslCqPlwOI%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831142926744.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=lRjge9a%2FQjGJIdZHEvYAJG8a1oA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831143155775.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Yx7SGNhHQu57mQLV8orpLKl5eCA%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831143706657.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ZO5fKUkJhbW625u0k0Vp0RBTFGo%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831143848162.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=btPs0RTuUtH3GvEim6YcjNUw210%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831144008514.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=JcxW5NLuNch%2B8SOcFqU6GVrr%2BRY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831144022459.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=4adWM6dHJs%2BlMGCYgJK3TN2UJdw%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831144150558.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ohBEU03upcGg1fLEgTXw%2BzsblTY%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831144406333.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=QWHeKanuCIbsncWgeNHebdsV75Q%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831144459762.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=JapcaVT6R7EvrwrvZo5FjfGZPio%3D&Expires=1758717475",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831144639545.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ljEqxuRBxmyZE4f90zOCNo3qEJ4%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831144838069.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=hFh3OlYgbfqfzfVmy%2FOrLkLcb18%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831145119857.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ZpnOteKDdSww70ZgEnopaL730SU%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831145154481.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Iq57YML%2BwgIkIC0vQbg6XPy9Teg%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831145217818.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5NSTRdTskrENmrgTAGIbgPe%2FbEk%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831145229112.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2BAwKd24BskWgmVlXKE9iXiZCBYc%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831145320872.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=c2MrcEUxCuOun2ZUBjxUwec%2BXi8%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831145445845.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=uvYpP99AY2wfa292vihh8tI%2BQ5o%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831145823282.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=iiW25sugEI%2BPe00mpFBbzItU%2BWY%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831150015617.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=OvR%2FoC8gcGq7NrS%2BDwnxjB2SJW4%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831151141728.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=xVxaiCy35SCR92GJ1IrUBASp1cA%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831151156227.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Zc2qm3BKUWnbXONJg3vlU6x%2Fu8U%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831151350202.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=dqnhWZmVqOjRTe6tfV3MY5mz9ak%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831151408048.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=9OP9fd99nIUdD4B4Cx6g%2FQ8Y2CI%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831151455915.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=sat59sylVjeu3Bo4%2FNrHYxL8FAE%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831151643099.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2FEBD%2FFLCFSjd2FupG2BoX%2BvIXB4%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831151645755.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=MibjLbsWajzvr2d0GOx9HGhND9s%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152136143.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2FtHFvPBhyQfLz2I39EoEI%2B7duRA%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152206644.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=NeSG9ukKp6pVIuvTJOAYGXGNTTA%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152333186.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=fzhPkhGs6AHZHnbSkFNiVnXOpy8%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152517892.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=i9cKiiA34gBLt5TORl5vKf9q7eU%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152543970.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=5qQ%2FVpM78lRJaelztDucAUF9Lbs%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152611471.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=1rUt0aDOla1ej3Y7aBuJm7c7J%2F8%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152621444.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=R5i%2B1mIs2LW%2Bl3V9zriN9wcc5lc%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152623061.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=C%2Flo7tWR%2F9eMCbxA7DyvKfUZoFo%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152656761.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=9OO5kF8ZjeiA%2Ff7vbbniCIVPEes%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152710394.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=yq2qVha1j%2FDak79EyU%2F%2Fw3yOJ6I%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152743150.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=RJZ9jtsB8ubcOtnqIXnH%2FfOugc0%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152818475.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=p2IdB5UOcO0mpHCIZp%2B47F2LxV4%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831152906241.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=4PPfcqOgFZd2mz4D4%2B3d9ULyu%2Fc%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153047081.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=l%2FCQcM%2BQgCXF5qiOI2ipaho9EdY%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153315504.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=k4bCHvJMRxK6qPRBmyOR7HuOvDU%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153409669.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=6hhUG8ptqXaz6dn8QYlx0p7G2j8%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153501241.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=it5zB976kRidQX%2FDghTOHsqZBa0%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153544334.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=GbJ3KDV5qo1SsgoGoEGfcdT7T9k%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153640475.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=B7dcWFNOQAjXisAUnxug4YympsI%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153722601.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=WoyLsa9uRHXQePIH1%2BLRgbszfF8%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153728094.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=tkARaog719lv0JO1lKyJuRrdY6A%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153738179.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=3LGAItsqd%2FYd6XPCuryU22Un8p0%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250831153749774.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=eWXAwMe2hZDczJPZNjQLYiLOQ7g%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917145914041.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=wg3GKyUhRH7uUOzTHr4sDYq%2BXQQ%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917145920303.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=hzkD%2F4PjhdI9rsHvkZcs54YyUvs%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917145931899.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=TZTtyZCu%2BbdwdCipMxx1MlPXWTM%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917145942667.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=wCdJi%2FoxJsX7Mew5vxQWPMd2R3Y%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917145950504.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=gvkA6iLgOVaSDy%2B3UjIkUa1Ps7A%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150009389.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=3uZwdePmX%2FFamwiBSud4vr3eJYk%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150013143.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=w3mGCxCe5fv3PcPOW987zXg3UQQ%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150017870.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=UwFxrm87YwCfzrJwlrFrwyydbvE%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150034444.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Dw%2Bb0SyiF1PuWqeY0O5dWHNGrXQ%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150049680.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=G1tazLBD%2FhhmeG4mi4z31i8W%2FLo%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150127438.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2FYGz8qH%2FyF090h9CopMvd4ylt2Y%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150147773.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=RmejDqeJXeuBrDIXShYZ9SIkV1Q%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150221495.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=Hlf5G6ymYt%2FRVo0WZISazHlh4p4%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150237898.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=w3WWop9ATovX1vDFYXzek0YEd8Y%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150403938.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=sIterTwbSPurrJP9clEOvZ%2FKpak%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150433421.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ZZAIMN2%2FB2WcDT6epZI%2BWQtNKLM%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917150511348.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=SIUJ7XwzxZhJrWf1Z0tTILxjvZI%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917151447657.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=%2BsRn4KPMXgp6Z16gOOURvMij2gE%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/20250917151634526.tif?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=NX1RQXoorZlSpeLXy8met8thBhI%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831103356.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=ZQnus76c1cRojjzbMm%2BOQVgBAmg%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831104555.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=1E8zzsFzcq2RTm1l7EmaABzaV9E%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831105039.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=wny7SnEZMgj0UqWn1982%2FHcdpaM%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831105812.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=hS3tHFt1LSrV7QgsntUzLrbU25Q%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831110624.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=JLkOkw511NcNdf6dwy08LvLz5I0%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831122135.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=1NMM681okwUxFO9tJA5uAGlzJyw%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831145827.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=YMTmia7bKh%2F6RRgJL9UDFQV5P6c%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250831150021.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=XoXqZQzAv2KMh8O%2FW4V2tsI1gLQ%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250917145819.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=GjDkKkkUIxjqN2GnJMpDZDlDVGA%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250917150132.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=8thWYkBFnwowTrcsl%2Be3mC4lHIQ%3D&Expires=1758717476",
-  "https://s3.eu-central-003.backblazeb2.com/microscopydata/250917150543.mp4?AWSAccessKeyId=003c3fa3cc4d5300000000004&Signature=oAFfiDSF8w%2FLUTTWK521FZGEqPA%3D&Expires=1758717476"
+  {
+    "fileName": "20250831103103810.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831103103810.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831103230110.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831103230110.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831103531459.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831103531459.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831103532670.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831103532670.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831104608298.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831104608298.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831105038007.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831105038007.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831105824830.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831105824830.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831105859925.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831105859925.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110324014.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110324014.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110327669.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110327669.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110327931.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110327931.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110329613.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110329613.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110620752.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110620752.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110822185.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110822185.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110822407.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110822407.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110822772.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110822772.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110823009.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110823009.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110823200.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110823200.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110823406.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110823406.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110823595.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110823595.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110823769.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110823769.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110823959.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110823959.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110824142.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110824142.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110824343.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110824343.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110824560.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110824560.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110824767.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110824767.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110824980.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110824980.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110825154.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110825154.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831110825348.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831110825348.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831111836499.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831111836499.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831112059596.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831112059596.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831112533568.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831112533568.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831112904196.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831112904196.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831114521313.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831114521313.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831115403782.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831115403782.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831115638809.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831115638809.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120100610.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120100610.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120212001.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120212001.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120655680.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120655680.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120659289.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120659289.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120725747.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120725747.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120735320.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120735320.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120804800.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120804800.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120808832.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120808832.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120812232.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120812232.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120815931.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120815931.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120817260.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120817260.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831120858639.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831120858639.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121008167.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121008167.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121008999.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121008999.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121047641.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121047641.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121048100.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121048100.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121325572.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121325572.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121326898.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121326898.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121433574.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121433574.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121604475.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121604475.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121638757.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121638757.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121639685.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121639685.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121805314.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121805314.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121806322.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121806322.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121837149.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121837149.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121855235.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121855235.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121914254.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121914254.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121921577.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121921577.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121934417.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121934417.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831121936225.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831121936225.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122005877.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122005877.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122007496.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122007496.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122116746.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122116746.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122129590.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122129590.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122218539.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122218539.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122221334.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122221334.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122253678.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122253678.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122328290.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122328290.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122354394.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122354394.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122355740.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122355740.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122356045.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122356045.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122446980.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122446980.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122448162.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122448162.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122538892.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122538892.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122626718.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122626718.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122730106.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122730106.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831122757912.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831122757912.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123317197.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123317197.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123356930.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123356930.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123602607.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123602607.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123645915.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123645915.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123650053.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123650053.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123729103.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123729103.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123730279.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123730279.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123745389.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123745389.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123753963.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123753963.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123801560.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123801560.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123902619.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123902619.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123903473.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123903473.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123944595.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123944595.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123946106.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123946106.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831123950197.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831123950197.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124000853.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124000853.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124007805.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124007805.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124011400.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124011400.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124117466.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124117466.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124119747.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124119747.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124142556.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124142556.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124253974.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124253974.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124257012.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124257012.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124309165.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124309165.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124315989.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124315989.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124351555.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124351555.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124358185.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124358185.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124407066.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124407066.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124439581.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124439581.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124451045.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124451045.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124455102.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124455102.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124505916.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124505916.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124526766.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124526766.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124630854.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124630854.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124632562.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124632562.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124700536.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124700536.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124843313.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124843313.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831124912232.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831124912232.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831125105426.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831125105426.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831125134166.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831125134166.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831125429297.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831125429297.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831125435795.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831125435795.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831125436100.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831125436100.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831142708354.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831142708354.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831142926744.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831142926744.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831143155775.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831143155775.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831143706657.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831143706657.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831143848162.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831143848162.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831144008514.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831144008514.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831144022459.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831144022459.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831144150558.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831144150558.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831144406333.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831144406333.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831144459762.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831144459762.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831144639545.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831144639545.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831144838069.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831144838069.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831145119857.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831145119857.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831145154481.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831145154481.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831145217818.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831145217818.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831145229112.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831145229112.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831145320872.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831145320872.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831145445845.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831145445845.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831145823282.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831145823282.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831150015617.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831150015617.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831151141728.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831151141728.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831151156227.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831151156227.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831151350202.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831151350202.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831151408048.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831151408048.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831151455915.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831151455915.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831151643099.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831151643099.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831151645755.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831151645755.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152136143.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152136143.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152206644.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152206644.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152333186.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152333186.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152517892.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152517892.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152543970.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152543970.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152611471.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152611471.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152621444.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152621444.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152623061.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152623061.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152656761.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152656761.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152710394.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152710394.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152743150.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152743150.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152818475.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152818475.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831152906241.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831152906241.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153047081.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153047081.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153315504.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153315504.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153409669.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153409669.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153501241.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153501241.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153544334.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153544334.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153640475.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153640475.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153722601.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153722601.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153728094.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153728094.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153738179.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153738179.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250831153749774.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250831153749774.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917145914041.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917145914041.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917145920303.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917145920303.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917145931899.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917145931899.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917145942667.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917145942667.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917145950504.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917145950504.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150009389.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150009389.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150013143.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150013143.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150017870.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150017870.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150034444.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150034444.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150049680.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150049680.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150127438.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150127438.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150147773.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150147773.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150221495.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150221495.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150237898.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150237898.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150403938.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150403938.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150433421.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150433421.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917150511348.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917150511348.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917151447657.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917151447657.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "20250917151634526.tif",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/20250917151634526.tif?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831103356.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831103356.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831104555.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831104555.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831105039.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831105039.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831105812.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831105812.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831110624.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831110624.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831122135.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831122135.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831145827.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831145827.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250831150021.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250831150021.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250917145819.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250917145819.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250917150132.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250917150132.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  },
+  {
+    "fileName": "250917150543.mp4",
+    "url": "https://f003.backblazeb2.com/file/microscopydata/250917150543.mp4?Authorization=3_20250917141247_1d898d42a6eb0697ff10cb48_fc668588912c8e7dd3155c1a1971b7654ae38d1b_003_20250924141247_0000_dnld"
+  }
 ]

@@ -1,133 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Media Labeling Tool</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 20px; }
-#media-container { margin-bottom: 10px; }
-img, canvas, video { max-width: 80vw; max-height: 60vh; display: block; margin-bottom: 10px; }
-button { margin-right: 10px; margin-bottom: 5px; padding: 10px 15px; }
-#progress { margin-top: 10px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Media Labeling Tool</title>
+  <script src="https://unpkg.com/utif@3.0.0/build/UTIF.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #media-container { margin-bottom: 15px; }
+    img, canvas, video { max-width: 90%; max-height: 500px; display: block; margin: auto; }
+    button { margin: 5px; padding: 10px 20px; }
+    #progress { margin-top: 15px; font-weight: bold; }
+    #storage-controls { margin-top: 15px; }
+  </style>
 </head>
 <body>
-<h1>Media Labeling Tool</h1>
-<div id="media-container"></div>
-<div>
-  <button data-label="Pebrine">Pebrine</button>
-  <button data-label="Bacteria">Bacteria</button>
-  <button data-label="Clear">Clear</button>
-  <button id="reject-btn">Reject</button>
-  <button id="download-csv-btn">Download CSV</button>
-</div>
-<div id="progress"></div>
-<script src="https://cdn.jsdelivr.net/npm/utif@2.0.1/dist/UTIF.min.js"></script>
-<script>
-let mediaList = [];
-let currentIndex = 0;
-let results = [];
+  <h2>Media Labeling Tool</h2>
 
-// Load progress from localStorage
-function loadProgress() {
-  const savedResults = localStorage.getItem('results');
-  const savedIndex = localStorage.getItem('currentIndex');
-  if (savedResults) results = JSON.parse(savedResults);
-  if (savedIndex) currentIndex = parseInt(savedIndex);
-}
+  <div id="media-container"></div>
 
-// Save progress to localStorage
-function saveProgress() {
-  localStorage.setItem('results', JSON.stringify(results));
-  localStorage.setItem('currentIndex', currentIndex);
-}
+  <div id="controls">
+    <button onclick="label('Pebrine')">Pebrine (P)</button>
+    <button onclick="label('Bacteria')">Bacteria (B)</button>
+    <button onclick="label('Clear')">Clear (C)</button>
+    <button onclick="reject()">Reject (R)</button>
+    <button onclick="nextFile()">Next File (N)</button>
+  </div>
 
-async function loadMediaList() {
-  const res = await fetch('images.json');
-  mediaList = await res.json();
-  showMedia();
-}
+  <div id="progress"></div>
 
-function showMedia() {
-  if (currentIndex >= mediaList.length) {
-    document.getElementById('media-container').innerHTML = '<p>All media labeled!</p>';
-    return;
-  }
-  const url = mediaList[currentIndex];
-  const container = document.getElementById('media-container');
-  container.innerHTML = '';
+  <button onclick="downloadCSV()">Download CSV (S)</button>
+  <div id="storage-controls">
+    <button onclick="clearStorage()">Clear Local Storage</button>
+  </div>
 
-  if (url.match(/\.(mp4|webm|ogg)$/i)) {
-    const video = document.createElement('video');
-    video.src = url;
-    video.controls = true;
-    video.id = 'current-video';
-    container.appendChild(video);
-  } else if (url.match(/\.(tif|tiff)$/i)) {
-    const img = new Image();
-    img.crossOrigin = "anonymous";
-    img.onload = () => {
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      const ifds = UTIF.decode(img);
-      UTIF.decodeImages(img, ifds);
-      UTIF.toCanvas(ifds[0], canvas);
-      container.innerHTML = '';
-      container.appendChild(canvas);
-    };
-    img.src = url;
-  } else {
-    const img = document.createElement('img');
-    img.src = url;
-    container.appendChild(img);
-  }
-  updateProgress();
-}
+  <script>
+    let mediaList = [];
+    let currentIndex = 0;
+    let results = [];
+    let currentVideo = null;
+    let isVideo = false;
 
-function updateProgress() {
-  document.getElementById('progress').innerText = `Progress: ${currentIndex + 1} / ${mediaList.length}`;
-}
+    async function loadMedia() {
+      const resp = await fetch("images.json");
+      mediaList = await resp.json();
 
-function saveCSV() {
-  if (results.length === 0) return alert("No labels to save yet.");
-  let csv = 'filename,timestamp,Pebrine,Bacteria,Clear\n';
-  results.forEach(r => {
-    csv += `"${r.filename}",${r.timestamp || ''},${r.Pebrine || ''},${r.Bacteria || ''},${r.Clear || ''}\n`;
-  });
-  const blob = new Blob([csv], {type: 'text/csv'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'labels.csv';
-  a.click();
-}
+      // Restore from local storage if available
+      const saved = localStorage.getItem("labelingState");
+      if (saved) {
+        try {
+          const state = JSON.parse(saved);
+          currentIndex = state.currentIndex || 0;
+          results = state.results || [];
+        } catch (e) {
+          console.warn("Failed to load saved state:", e);
+        }
+      }
 
-function recordLabel(label, isReject=false) {
-  const filename = mediaList[currentIndex];
-  let timestamp = null;
-  const video = document.getElementById('current-video');
-  if (video) timestamp = video.currentTime.toFixed(2);
+      updateProgress();
+      showMedia();
+    }
 
-  if (!isReject) {
-    const entry = { filename, timestamp };
-    ['Pebrine','Bacteria','Clear'].forEach(l => entry[l] = l === label ? l : '');
-    results.push(entry);
-  }
+    function saveState() {
+      const state = { currentIndex, results };
+      localStorage.setItem("labelingState", JSON.stringify(state));
+    }
 
-  currentIndex++;
-  saveProgress();
-  showMedia();
-}
+    function showMedia() {
+      if (currentIndex >= mediaList.length) {
+        document.getElementById("media-container").innerHTML = "<p>All files processed!</p>";
+        return;
+      }
 
-document.querySelectorAll('button[data-label]').forEach(btn => {
-  btn.addEventListener('click', e => recordLabel(e.target.dataset.label));
-});
+      const item = mediaList[currentIndex];
+      const container = document.getElementById("media-container");
+      container.innerHTML = "";
+      currentVideo = null;
+      isVideo = false;
 
-document.getElementById('reject-btn').addEventListener('click', () => recordLabel(null,true));
-document.getElementById('download-csv-btn').addEventListener('click', saveCSV);
+      if (item.url.match(/\.(jpg|jpeg|png)$/i)) {
+        const img = document.createElement("img");
+        img.src = item.url;
+        container.appendChild(img);
+      } else if (item.url.match(/\.(tif|tiff)$/i)) {
+        fetch(item.url)
+          .then(r => r.arrayBuffer())
+          .then(buf => {
+            const ifds = UTIF.decode(buf);
+            UTIF.decodeImages(buf, ifds);
+            const rgba = UTIF.toRGBA8(ifds[0]);
+            const canvas = document.createElement("canvas");
+            canvas.width = ifds[0].width;
+            canvas.height = ifds[0].height;
+            const ctx = canvas.getContext("2d");
+            const imgData = ctx.createImageData(canvas.width, canvas.height);
+            imgData.data.set(rgba);
+            ctx.putImageData(imgData, 0, 0);
+            container.appendChild(canvas);
+          });
+      } else if (item.url.match(/\.(mp4|webm|ogg)$/i)) {
+        const video = document.createElement("video");
+        video.src = item.url;
+        video.controls = true;
+        video.preload = "metadata";
+        container.appendChild(video);
+        currentVideo = video;
+        isVideo = true;
+      } else {
+        container.innerHTML = "<p>Unsupported file type: " + item.fileName + "</p>";
+      }
+    }
 
-loadProgress();
-loadMediaList();
-</script>
+    function label(choice) {
+      const item = mediaList[currentIndex];
+      let timestamp = "";
+
+      if (currentVideo) {
+        timestamp = currentVideo.currentTime.toFixed(2);
+      }
+
+      let row = {
+        fileName: item.fileName,
+        Timestamp: timestamp,
+        Pebrine: choice === "Pebrine" ? "Pebrine" : "",
+        Bacteria: choice === "Bacteria" ? "Bacteria" : "",
+        Clear: choice === "Clear" ? "Clear" : ""
+      };
+
+      results.push(row);
+      saveState();
+
+      if (!isVideo) {
+        currentIndex++;
+        updateProgress();
+        showMedia();
+        saveState();
+      } else {
+        updateProgress();
+      }
+    }
+
+    function reject() {
+      currentIndex++;
+      updateProgress();
+      showMedia();
+      saveState();
+    }
+
+    function nextFile() {
+      currentIndex++;
+      updateProgress();
+      showMedia();
+      saveState();
+    }
+
+    function updateProgress() {
+      document.getElementById("progress").textContent =
+        `Progress: ${currentIndex}/${mediaList.length}`;
+    }
+
+    function downloadCSV() {
+      let csv = "Filename,Timestamp,Pebrine,Bacteria,Clear\n";
+      results.forEach(r => {
+        csv += `${r.fileName},${r.Timestamp},${r.Pebrine},${r.Bacteria},${r.Clear}\n`;
+      });
+      const blob = new Blob([csv], { type: "text/csv" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "labels.csv";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function clearStorage() {
+      localStorage.removeItem("labelingState");
+      alert("Local storage cleared. Reload page to start fresh.");
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener("keydown", e => {
+      if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+      switch (e.key.toLowerCase()) {
+        case "p": label("Pebrine"); break;
+        case "b": label("Bacteria"); break;
+        case "c": label("Clear"); break;
+        case "r": reject(); break;
+        case "n": nextFile(); break;
+        case "s": downloadCSV(); break;
+      }
+    });
+
+    loadMedia();
+  </script>
 </body>
 </html>
