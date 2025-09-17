@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Media Labeling Tool</title>
-  <script src="https://unpkg.com/utif@3.0.0/build/UTIF.min.js"></script>
+  <script src="https://unpkg.com/tiff@1.0.0/tiff.min.js"></script>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     #media-container { margin-bottom: 15px; }
@@ -44,7 +44,7 @@
       const resp = await fetch("images.json");
       mediaList = await resp.json();
 
-      // Restore from local storage if available
+      // Restore from local storage
       const saved = localStorage.getItem("labelingState");
       if (saved) {
         try {
@@ -52,7 +52,7 @@
           currentIndex = state.currentIndex || 0;
           results = state.results || [];
         } catch (e) {
-          console.warn("Failed to load saved state:", e);
+          console.warn("Failed to parse saved state:", e);
         }
       }
 
@@ -61,8 +61,7 @@
     }
 
     function saveState() {
-      const state = { currentIndex, results };
-      localStorage.setItem("labelingState", JSON.stringify(state));
+      localStorage.setItem("labelingState", JSON.stringify({ currentIndex, results }));
     }
 
     function showMedia() {
@@ -88,12 +87,13 @@
         fetch(item.url)
           .then(r => r.arrayBuffer())
           .then(buf => {
-            const ifds = UTIF.decode(buf);
-            UTIF.decodeImages(buf, ifds);
-            const canvas = document.createElement("canvas");
-            const ctx = canvas.getContext("2d");
-            UTIF.renderImage(ctx, ifds[0]);  // direct TIFF → canvas
-            container.appendChild(canvas);
+            const tiff = new Tiff({ buffer: buf });
+            const canvas = tiff.toCanvas();
+            if (canvas) {
+              container.appendChild(canvas);
+            } else {
+              container.innerHTML = "<p>Failed to render TIFF file.</p>";
+            }
           })
           .catch(err => {
             container.innerHTML = "<p>Failed to load TIFF: " + err + "</p>";
