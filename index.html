@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Media Labeling Tool</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+#media-container { margin-bottom: 10px; }
+img, canvas, video { max-width: 80vw; max-height: 60vh; display: block; margin-bottom: 10px; }
+button { margin-right: 10px; margin-bottom: 5px; padding: 10px 15px; }
+#progress { margin-top: 10px; }
+</style>
+</head>
+<body>
+<h1>Media Labeling Tool</h1>
+<div id="media-container"></div>
+<div>
+  <button data-label="Pebrine">Pebrine</button>
+  <button data-label="Bacteria">Bacteria</button>
+  <button data-label="Clear">Clear</button>
+  <button id="reject-btn">Reject</button>
+  <button id="download-csv-btn">Download CSV</button>
+</div>
+<div id="progress"></div>
+<script src="https://cdn.jsdelivr.net/npm/utif@2.0.1/dist/UTIF.min.js"></script>
+<script>
+let mediaList = [];
+let currentIndex = 0;
+let results = [];
+
+// Load progress from localStorage
+function loadProgress() {
+  const savedResults = localStorage.getItem('results');
+  const savedIndex = localStorage.getItem('currentIndex');
+  if (savedResults) results = JSON.parse(savedResults);
+  if (savedIndex) currentIndex = parseInt(savedIndex);
+}
+
+// Save progress to localStorage
+function saveProgress() {
+  localStorage.setItem('results', JSON.stringify(results));
+  localStorage.setItem('currentIndex', currentIndex);
+}
+
+async function loadMediaList() {
+  const res = await fetch('images.json');
+  mediaList = await res.json();
+  showMedia();
+}
+
+function showMedia() {
+  if (currentIndex >= mediaList.length) {
+    document.getElementById('media-container').innerHTML = '<p>All media labeled!</p>';
+    return;
+  }
+  const url = mediaList[currentIndex];
+  const container = document.getElementById('media-container');
+  container.innerHTML = '';
+
+  if (url.match(/\.(mp4|webm|ogg)$/i)) {
+    const video = document.createElement('video');
+    video.src = url;
+    video.controls = true;
+    video.id = 'current-video';
+    container.appendChild(video);
+  } else if (url.match(/\.(tif|tiff)$/i)) {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const ifds = UTIF.decode(img);
+      UTIF.decodeImages(img, ifds);
+      UTIF.toCanvas(ifds[0], canvas);
+      container.innerHTML = '';
+      container.appendChild(canvas);
+    };
+    img.src = url;
+  } else {
+    const img = document.createElement('img');
+    img.src = url;
+    container.appendChild(img);
+  }
+  updateProgress();
+}
+
+function updateProgress() {
+  document.getElementById('progress').innerText = `Progress: ${currentIndex + 1} / ${mediaList.length}`;
+}
+
+function saveCSV() {
+  if (results.length === 0) return alert("No labels to save yet.");
+  let csv = 'filename,timestamp,Pebrine,Bacteria,Clear\n';
+  results.forEach(r => {
+    csv += `"${r.filename}",${r.timestamp || ''},${r.Pebrine || ''},${r.Bacteria || ''},${r.Clear || ''}\n`;
+  });
+  const blob = new Blob([csv], {type: 'text/csv'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'labels.csv';
+  a.click();
+}
+
+function recordLabel(label, isReject=false) {
+  const filename = mediaList[currentIndex];
+  let timestamp = null;
+  const video = document.getElementById('current-video');
+  if (video) timestamp = video.currentTime.toFixed(2);
+
+  if (!isReject) {
+    const entry = { filename, timestamp };
+    ['Pebrine','Bacteria','Clear'].forEach(l => entry[l] = l === label ? l : '');
+    results.push(entry);
+  }
+
+  currentIndex++;
+  saveProgress();
+  showMedia();
+}
+
+document.querySelectorAll('button[data-label]').forEach(btn => {
+  btn.addEventListener('click', e => recordLabel(e.target.dataset.label));
+});
+
+document.getElementById('reject-btn').addEventListener('click', () => recordLabel(null,true));
+document.getElementById('download-csv-btn').addEventListener('click', saveCSV);
+
+loadProgress();
+loadMediaList();
+</script>
+</body>
+</html>
