@@ -85,9 +85,19 @@
           .then(r => r.arrayBuffer())
           .then(buf => {
             const ifds = UTIF.decode(buf);
-            const canvas = UTIF.toCanvas(ifds[0]); // render TIFF to canvas
-            if (canvas) container.appendChild(canvas);
-            else container.innerHTML = "<p>Failed to render TIFF file.</p>";
+            UTIF.decodeImage(buf, ifds[0]); // decode first page
+
+            const rgba = UTIF.toRGBA8(ifds[0]);
+            const w = ifds[0].width;
+            const h = ifds[0].height;
+            const canvas = document.createElement("canvas");
+            canvas.width = w;
+            canvas.height = h;
+            const ctx = canvas.getContext("2d");
+            const imgData = ctx.createImageData(w, h);
+            imgData.data.set(rgba);
+            ctx.putImageData(imgData, 0, 0);
+            container.appendChild(canvas);
           })
           .catch(err => {
             container.innerHTML = "<p>Failed to load TIFF: " + err + "</p>";
